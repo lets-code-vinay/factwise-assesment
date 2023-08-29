@@ -1,7 +1,7 @@
 {
-  "name": "assignment-Factwise",
+  "name": "shivam-vitkare-codesandbox",
   "author": "Ashutosh Maurya",
-  "description": " ",
+  "description": "",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,5 +49,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": []
 }

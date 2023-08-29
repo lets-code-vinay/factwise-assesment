@@ -8,7 +8,7 @@ import {
   Slide,
   Box,
   makeStyles,
-  Typography,
+  Typography
 } from "@material-ui/core";
 import "./styles.css";
 
@@ -72,7 +72,7 @@ export default function ConfirmationModal({ open, setOpen, onDelete }) {
 const useStyles = makeStyles(() => ({
   confirmationTitle: {
     marginTop: "5%",
-    fontSize: "2rem !important",
+    fontSize: "25px !important"
   },
   confirmationButtonCancel: {
     width: "25%",
@@ -80,8 +80,8 @@ const useStyles = makeStyles(() => ({
     border: "2px solid #b6b6b8",
     borderRadius: "12px",
     marginBottom: "2rem",
-    fontSize: "1.2rem",
-    color: "black",
+    fontSize: "20px !important",
+    color: "black"
   },
   confirmationButtonDelete: {
     width: "25%",
@@ -90,6 +90,6 @@ const useStyles = makeStyles(() => ({
     marginBottom: "2rem",
     borderRadius: "12px",
     fontSize: "1.2rem",
-    backgroundColor: "#ff3500",
-  },
+    backgroundColor: "#ff3500"
+  }
 }));

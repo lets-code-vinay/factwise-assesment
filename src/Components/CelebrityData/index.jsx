@@ -7,7 +7,7 @@ import {
   DeleteForever as DeleteForeverIcon,
   ExpandMore as ExpandMoreIcon,
   CancelOutlined as CancelOutlinedIcon,
-  CheckCircleOutlineOutlined as CheckCircleOutlineOutlinedIcon,
+  CheckCircleOutlineOutlined as CheckCircleOutlineOutlinedIcon
 } from "@material-ui/icons";
 import {
   Accordion,
@@ -18,7 +18,7 @@ import {
   Typography,
   FormControl,
   Select,
-  MenuItem,
+  MenuItem
 } from "@material-ui/core";
 import { GENDERS } from "../../Configs/gender";
 
@@ -37,7 +37,7 @@ export default function CelebrityData({
   celebritiesData = [],
   setCelebritiesData = () => {},
   setConfirmationOpen = () => {},
-  currentCelebrity = () => {},
+  currentCelebrity = () => {}
 }) {
   const classes = useStyles();
 
@@ -57,15 +57,13 @@ export default function CelebrityData({
    * @param {String} inputType
    * @param {Object} event
    */
-  const handleEditUser =
-    (inputType) =>
-    ({ target: { value = "" } = {} }) => {
-      const updatedData = { ...newData[index], [inputType]: value };
-      newData[index] = updatedData;
+  const handleEditUser = (inputType) => ({ target: { value = "" } = {} }) => {
+    const updatedData = { ...newData[index], [inputType]: value };
+    newData[index] = updatedData;
 
-      setData([...newData]);
-      setCelebritiesData(newData);
-    };
+    setData([...newData]);
+    setCelebritiesData(newData);
+  };
 
   /**
    * @description Cancel Edit state
@@ -263,7 +261,7 @@ CelebrityData.defaultProps = {
   celebritiesData: [],
   setCelebritiesData: () => {},
   setConfirmationOpen: () => {},
-  currentCelebrity: () => {},
+  currentCelebrity: () => {}
 };
 
 /**
@@ -284,26 +282,30 @@ CelebrityData.propsType = {
   celebritiesData: array,
   setCelebritiesData: func,
   setConfirmationOpen: func,
-  currentCelebrity: func,
+  currentCelebrity: func
 };
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    marginTop: "4%",
+    marginTop: "4%"
   },
   userCard: {
     margin: "5% 0",
     border: "2px solid #CECECE",
     borderRadius: "20px !important",
+    padding: "10px !important"
   },
   userPicture: {
     border: "4px solid #CECECE",
     borderRadius: "50%",
+    width: "80px",
+    height: "80px"
   },
   userTitle: {
     margin: "2% 5%",
-    fontWeight: "500",
+    fontWeight: "400",
+    fontSize: "20px"
   },
   userDetail: {
     display: "flex",
@@ -311,25 +313,27 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     width: "90%",
+    padding: "10px !important",
+    fontSize: "20px"
   },
 
   userData: {
-    marginTop: "2%",
+    marginTop: "2%"
   },
   user: {
-    display: "block",
+    display: "block"
   },
   primaryText: {
     color: "#767679",
-    fontSize: "1.5rem",
+    fontSize: "1.5rem"
   },
   secondaryText: {
     color: "#000",
-    fontSize: "1.5rem",
+    fontSize: "1.5rem"
   },
 
   userActionIcon: {
-    fontSize: "3rem",
+    fontSize: "3rem"
   },
   editUserName: {
     margin: "2% 5%",
@@ -338,7 +342,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.5rem",
     border: "3px solid grey",
     borderRadius: "11px",
-    padding: "0 0.5rem",
+    padding: "0 0.5rem"
   },
 
   editUser: {
@@ -348,13 +352,13 @@ const useStyles = makeStyles((theme) => ({
     border: "3px solid grey",
     borderRadius: "11px",
     padding: "0 0.5rem",
-    marginLeft: "5px",
+    marginLeft: "5px"
   },
 
   editUserTextArea: {
     fontSize: "1.5rem",
     border: "3px solid grey",
     borderRadius: "11px",
-    padding: "0 0.5rem",
-  },
+    padding: "0 0.5rem"
+  }
 }));

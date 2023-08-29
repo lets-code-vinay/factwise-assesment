@@ -5,3 +5,13 @@ div#demo-simple-select-outlined {
   font-size: 1.4rem;
   font-weight: 400;
 }
+@media (max-width: 576px) {
+  editUserTextArea {
+    fontsize: 1rem;
+    border: 3px solid grey;
+    borderradius: 11px;
+    padding: 0 0.5rem;
+    marginleft: -10%;
+    width: 50px;
+  }
+}
